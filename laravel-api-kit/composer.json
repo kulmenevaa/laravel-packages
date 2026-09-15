@@ -1,0 +1,32 @@
+{
+    "name": "local/laravel-api-kit",
+    "description": "Reusable JSON API kit for Laravel projects: a base API controller and a typed, numeric-code error envelope for exception rendering.",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Local\\LaravelApiKit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Local\\LaravelApiKit\\Tests\\": "tests/"
+        },
+        "classmap": [
+            "tests/Stubs"
+        ]
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "mockery/mockery": "^1.6",
+        "illuminate/auth": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/validation": "^10.0|^11.0|^12.0|^13.0"
+    }
+}
